@@ -1,0 +1,47 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(11, 11, 11);
+}
+.head{
+    color: beige;
+}
+
+#sectionList{
+   border: 2px rgb(2, 2, 2) solid;
+  height: 810px;
+  width: 850px;
+   
+    background-color: rgba(15, 12, 8, 0.74);
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #15ce28;
+  }
+  li:hover {
+    text-decoration: underline;
+  }
+  #sectionContent {
+    margin-top: 20px;
+    padding: 10px;
+   
+    background-color: #a8a0a0;
+  }
+  #r{
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Constitution Sections</title>
+  
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <h1 class="head">Indian Constitution Sections</h1>
+  <p class="head">Click on any section to read more about it:</p>
+  <div id="r">
+ 
+  <!---=-> List of Sections -->
+
+  <ul id="sectionList">
+    
+    <li onclick="showContent('Preamble')">Preamble</li>
+    <li onclick="showContent('Part I: The Union and its Territory')">Part I: The Union and its Territory</li>
+    <li onclick="showContent('Part II: Citizenship')">Part II: Citizenship</li>
+    <li onclick="showContent('Part III: Fundamental Rights')">Part III: Fundamental Rights</li>
+    <li onclick="showContent('Part IV: Directive Principles of State Policy')">Part IV: Directive Principles of State Policy</li>
+    <li onclick="showContent('Part IVA: Fundamental Duties')">Part IVA: Fundamental Duties</li>
+    <li onclick="showContent('Part V: The Union')">Part V: The Union</li>
+    <li onclick="showContent('Part VI: The States')">Part VI: The States</li>
+    <li onclick="showContent('Part VIII: The Union Territories')">Part VIII: The Union Territories</li>
+    <li onclick="showContent('Part IX: Panchayats')">Part IX: Panchayats</li>
+    <li onclick="showContent('Part IXA: Municipalities')">Part IXA: Municipalities</li>
+    <li onclick="showContent('Part X: The Scheduled and Tribal Areas')">Part X: The Scheduled and Tribal Areas</li>
+    <li onclick="showContent('Part XI: Relations between the Union and the States')">Part XI: Relations between the Union and the States</li>
+    <li onclick="showContent('Part XII: Finance, Property, Contracts, and Suits')">Part XII: Finance, Property, Contracts, and Suits</li>
+    <li onclick="showContent('Part XIII: Trade, Commerce, and Intercourse within India')">Part XIII: Trade, Commerce, and Intercourse within India</li>
+    <li onclick="showContent('Part XIV: Services under the Union and States')">Part XIV: Services under the Union and States</li>
+    <li onclick="showContent('Part XV: Elections')">Part XV: Elections</li>
+    <li onclick="showContent('Part XVI: Special Provisions Relating to Certain Classes')">Part XVI: Special Provisions Relating to Certain Classes</li>
+    <li onclick="showContent('Part XVII: Official Language')">Part XVII: Official Language</li>
+    <li onclick="showContent('Part XVIII: Emergency Provisions')">Part XVIII: Emergency Provisions</li>
+    <li onclick="showContent('Part XIX: Miscellaneous')">Part XIX: Miscellaneous</li>
+    <li onclick="showContent('Part XX: Amendment of the Constitution')">Part XX: Amendment of the Constitution</li>
+    <li onclick="showContent('Part XXI: Temporary, Transitional, and Special Provisions')">Part XXI: Temporary, Transitional, and Special Provisions</li>
+    <li onclick="showContent('Part XXII: Short Title, Commencement, and Repeal')">Part XXII: Short Title, Commencement, and Repeal</li>
+  
+</ul>
+<div id="sectionContent"></div>
+</div>
+
+  <script>
+    function showContent(section) {
+      const content = {
+        "Preamble": "The Preamble is an introductory statement to the Constitution that articulates the ideals of justice, liberty, equality, and fraternity, reflecting the aspirations of the Indian people. It declares India to be a Sovereign, Socialist, Secular, Democratic Republic, setting the tone for the Constitution’s framework and principles.",
+    
+    "Part I: The Union and its Territory": "This part establishes India as a Union, a single entity that cannot be disintegrated, and defines the Union and its territories. It outlines how new states may be admitted to the Union, and how boundaries of existing states or territories can be altered by Parliament. It emphasizes India’s unity and territorial integrity.",
+    
+    "Part II: Citizenship": "This part defines who is a citizen of India and how citizenship can be acquired or lost. It clarifies the rights of people who migrated to India from Pakistan, as well as the Parliament’s power to legislate on matters of citizenship. It ensures that the process of becoming an Indian citizen is governed by clear and just rules.",
+    
+    "Part III: Fundamental Rights": "This part provides a set of essential rights to all citizens, such as equality before the law, freedom of speech, freedom to practice religion, and protection from arbitrary actions. The rights ensure that the citizens are protected from any unconstitutional actions by the state. It also includes Article 32, which provides for remedies when rights are violated, giving individuals access to justice.",
+    
+    "Part IV: Directive Principles of State Policy": "This part sets out guidelines for the government to follow in order to achieve social and economic justice, promoting the welfare of the people. While not enforceable in courts, these principles serve as a benchmark for legislation and policy decisions aimed at reducing inequality and poverty, and ensuring the equitable distribution of wealth.",
+    
+    "Part IVA: Fundamental Duties": "Part IVA lists the moral duties of Indian citizens to promote a sense of responsibility towards the state and society. These duties include respecting the Constitution, protecting the environment, and promoting harmony. While these duties are not legally enforceable, they reflect the values of responsible citizenship and national unity.",
+    
+    "Part V: The Union": "This part defines the Union government’s structure, powers, and functions, which include the President, the Council of Ministers, Parliament, and the Judiciary. It lays out the framework for the administration of the central government, setting forth the powers of each branch, including the power of the President to issue ordinances and dissolve Parliament.",
+    
+    "Part VI: The States": "Part VI defines the powers and structure of state governments, including the office of the Governor, State Legislatures, and State Judiciary. It ensures that each state has a government to manage its own affairs, subject to the Constitution’s framework. It also defines the relationship between the Union and the states, especially in cases of emergencies.",
+    
+    "Part VIII: The Union Territories": "This part deals with the administration of Union Territories (UTs), areas directly governed by the central government. It outlines the special arrangements for governing these territories, including provisions for legislation by Parliament and administrative control by the President, with some UTs having their own legislature.",
+    
+    "Part IX: Panchayats": "This part sets up a framework for the establishment and functioning of Panchayats (rural local self-governments) to promote decentralized governance. Panchayats aim to bring governance closer to rural citizens, enabling them to manage local affairs and participate in the decision-making process. It ensures that the government functions at multiple levels, ensuring grassroots democracy.",
+    
+    "Part IXA: Municipalities": "Part IXA provides for urban local governance through Municipalities, ensuring that urban areas have decentralized administration. It aims to promote local self-governance in cities and towns, enabling citizens to actively participate in the management of their localities. It sets up structures for municipal elections, governance, and financial resources.",
+    
+    "Part X: The Scheduled and Tribal Areas": "This part makes special provisions for the governance of tribal areas, ensuring their protection from exploitation. It provides for laws and administrative frameworks tailored to the specific needs of tribal communities, aiming to protect their cultural heritage and guarantee their participation in the nation’s growth.",
+    
+    "Part XI: Relations between the Union and the States": "Part XI defines the division of legislative, executive, and financial powers between the Union and the States. It outlines the jurisdiction of Parliament and State Legislatures, ensuring a clear division of authority. It also empowers the Union to legislate in case of national interest, allowing it to supersede state laws in certain matters.",
+    
+    "Part XII: Finance, Property, Contracts, and Suits": "This part regulates the financial relationship between the Union and States, covering taxes, the distribution of financial resources, and the management of property and contracts. It also outlines provisions for government liabilities, ensuring that both levels of government are held accountable for financial matters.",
+    
+    "Part XIII: Trade, Commerce, and Intercourse within India": "This part ensures the free flow of trade, commerce, and communication across India, prohibiting restrictions on the movement of goods and people between states. It aims to foster economic integration and remove barriers that could hinder the growth of a unified national market.",
+    
+    "Part XIV: Services under the Union and States": "This part governs the recruitment, conditions of service, and conduct of government employees at both Union and State levels. It creates the Union Public Service Commission (UPSC) and State Public Service Commissions (SPSCs), which ensure transparency and fairness in the recruitment process for civil services.",
+    
+    "Part XV: Elections": "This part governs the electoral process in India, providing for the establishment of the Election Commission, which oversees the conduct of free and fair elections to Parliament and State Legislatures. It lays out the procedures for the formation of the government and the conduct of elections, ensuring the democratic process.",
+    
+    "Part XVI: Special Provisions Relating to Certain Classes": "This part provides for the representation and protection of backward classes, including Scheduled Castes (SC), Scheduled Tribes (ST), and other socially and economically disadvantaged groups. It ensures that these groups have adequate representation in Parliament and State Assemblies and helps promote social justice.",
+    
+    "Part XVII: Official Language": "Part XVII deals with the official language of the Union, which is Hindi, and the recognition of other regional languages. It sets guidelines for the use of Hindi in official communications, while also respecting the linguistic diversity of India by allowing for the continued use of regional languages for official purposes.",
+    
+    "Part XVIII: Emergency Provisions": "This part outlines the procedures for the declaration of a National Emergency (due to war or internal disturbance), State Emergency (President's Rule), and Financial Emergency. These provisions empower the Union government to take control in exceptional situations to preserve national security and stability.",
+    
+    "Part XIX: Miscellaneous": "This part includes various provisions regarding the immunity of the President, the powers of the Attorney General, and the Comptroller and Auditor General of India. It also includes provisions related to the power to issue writs, legal suits, and the administration of Union Territories.",
+    
+    "Part XX: Amendment of the Constitution": "This part provides the procedure for amending the Constitution, ensuring that it remains flexible to meet the changing needs of the country. Amendments can be made through Parliament, either with a simple majority or a two-thirds majority, depending on the nature of the amendment.",
+    
+    "Part XXI: Temporary, Transitional, and Special Provisions": "This part contains special provisions for certain regions, such as Jammu and Kashmir (prior to its reorganization in 2019), and other transitional matters concerning the adoption of laws, implementation of policies, and the adjustment of governance after the Constitution came into force.",
+    
+    "Part XXII: Short Title, Commencement, and Repeal": "This part specifies the short title of the Constitution, 'The Constitution of India,' its commencement date, and repeals all prior laws that were inconsistent with the new Constitution. It marks the transition from colonial rule to self-governance and establishes India as a republic."
+      };
+
+      // Update the content section
+      document.getElementById('sectionContent').innerHTML = `<h3>${section}</h3><p>${content[section]}</p>`;
+    }
+  </script>
+</body>
+</html>

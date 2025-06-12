@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Result</h1>
+    </header>
+    <main>
+        <div>
+            <p id="display_score"></p>
+            <button onclick="location.href='quiz.html'">Retake</button>
+            <button onclick="location.href='index.html'">Home</button>
+        </div>
+    </main>
+
+    <script>
+        // Retrieve the score from local storage and display it
+        let score = localStorage.getItem('quizScore');
+        document.getElementById('display_score').textContent = `Your Score: ${score}`;
+    </script>
+</body>
+</html>
